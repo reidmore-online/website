@@ -1,0 +1,159 @@
+@media (prefers-color-scheme: light) {
+    html {
+        background-color: #F2E2C4;
+    }
+
+    header {
+        background-image: url(../images/banner_daytime.png);
+        border: 4px solid #F27999;
+    }
+
+    nav {
+        border: 4px solid #F27999;
+    }
+
+    main {
+        border: 4px solid #F27999;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: #025E73;
+    }
+
+    header {
+        background-image: url(../images/banner_nighttime.png);
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        display: grid;
+        grid-template-columns: 8px repeat(4, 1fr) 8px;
+        gap: 4px;
+    }
+
+    header {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        height: 24vh;
+    }
+
+    nav {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        padding: 0 0.5em;
+    }
+    
+    main {
+        display: grid;
+        grid-column: 2 / 6;
+        grid-row-start: 3;
+        padding: 0 0.5em;
+        grid-template-columns: subgrid;
+    }
+
+    .section-head {
+        grid-column: 1 / 5;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {    
+    .container {
+        display: grid;
+        grid-template-columns: 4vw repeat(3, 1fr) 4vw;
+        gap: 4px;
+    }
+
+    header {
+        grid-column-start: 2;
+        grid-column-end: 5;
+        height: 24vh;
+    }
+
+    nav {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        padding: 0 0.5em;
+    }
+
+    main {
+        display: grid;
+        grid-column: 3 / 5;
+        grid-row-start: 2;
+        padding: 0 0.5em;
+        grid-template-columns: subgrid;
+    }
+
+    .section-head {
+        grid-column: 1 / 3;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 4vw repeat(4, 1fr) 4vw;
+        gap: 8px;
+    }
+
+    header {
+        grid-column-start: 2;
+        grid-column-end: 6;
+        height: 36vh;
+    }
+
+    nav {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        padding: 0 0.5em;
+    }
+
+    main {
+        display: grid;
+        grid-column: 3 / 6;
+        grid-row-start: 2;
+        padding: 0 0.5em;
+        grid-template-columns: subgrid;
+    }
+
+    .section-head {
+        grid-column: 1 / 4;
+    }
+} 
+
+html {
+    font-size: 16px;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 2em;
+    margin: 0;
+  }
+
+h2 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h3 {
+    font-family: sans-serif;
+    font-style: normal;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+p {
+    font-family: sans-serif;
+}
